@@ -8,8 +8,7 @@ pipeline {
         }
         stage("build") {
             steps {
-		sh '''cd jenkins
-		docker build -t nodejs-todo:v4 .'''
+		sh '''docker build -t nodejs-todo:v4 .'''
             }
         }
     }
